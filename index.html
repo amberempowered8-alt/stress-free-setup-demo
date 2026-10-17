@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Business Name</title>
+<meta name="description" content="Your business description goes here.">
+<!--
+  AE9 LABS: THE STRESS-FREE SETUP (SITE + BACK OFFICE) MASTER TEMPLATE
+  ===========================================
+  One site for nail techs, stylists, bakers, coaches, cleaners, handymen
+  and other local service providers.
+
+  To make it yours:
+  1) Open app.js and edit the CONFIG block at the top (name, colors, phone,
+     hero words, booking form link, etc.). You never touch this file.
+  2) Edit your Services and Reviews in Airtable. They sync to the site
+     automatically. See SETUP-GUIDE.
+  3) Swap photos by putting image files in the /images folder and adding the
+     file name in CONFIG (heroImage, aboutImage).
+
+  Direct links you can share with customers:
+     yoursite.com/#services   yoursite.com/#gallery   yoursite.com/#about   yoursite.com/#reviews
+     yoursite.com/#book       yoursite.com/#contact
+
+  No secret keys live in this file or in any file in this repo.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top"><span class="js-business-name">Your Business Name</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services" id="nav-services">Services</a>
+      <a href="#gallery" id="nav-gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary btn-small js-book-btn" href="#book">Book now</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow" id="hero-eyebrow">Your tagline goes here</p>
+      <h1><span id="hero-headline-1">Beautiful work.</span> <span class="accent-text" id="hero-headline-2">Booked in minutes.</span></h1>
+      <p class="sub" id="hero-subtext">A short, friendly sentence about what you do and who you do it for.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary js-book-btn" href="#book">Book now</a>
+        <a class="btn btn-ghost js-phone-link" data-label-prefix="Call or text" href="#contact">Call or text</a>
+      </div>
+      <div class="trust-row" id="trust-row"></div>
+    </div>
+    <div class="photo-block" id="hero-photo"><span>Your photo goes here</span></div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <p class="section-label" id="services-label">Services</p>
+    <h2 id="services-headline">What I offer</h2>
+    <div class="service-grid" id="service-grid">
+      <p class="loading">Loading services…</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="wrap">
+    <p class="section-label" id="gallery-label">Gallery</p>
+    <h2 id="gallery-headline">Recent work</h2>
+    <div class="gallery-grid" id="gallery-grid"></div>
+  </div>
+</section>
+
+<section class="section section-alt" id="about">
+  <div class="wrap about-grid">
+    <div class="photo-block" id="about-photo"><span>Your second photo goes here</span></div>
+    <div>
+      <p class="section-label">About</p>
+      <h2 id="about-headline">Meet the person behind the work</h2>
+      <p class="lead" id="about-lead">A short story about you and why you do this.</p>
+      <ul class="bullet-list" id="about-bullets"></ul>
+    </div>
+  </div>
+</section>
+
+<section class="area" id="area">
+  <div class="wrap area-inner">
+    <h3 id="area-headline">Serving your area</h3>
+    <div class="area-list" id="area-list"></div>
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="wrap">
+    <p class="section-label">Reviews</p>
+    <h2>What clients say</h2>
+    <div class="t-grid" id="t-grid">
+      <p class="loading">Loading reviews…</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="book">
+  <div class="wrap book-grid">
+    <div>
+      <p class="section-label">Book</p>
+      <h2 id="book-headline">Ready when you are</h2>
+      <p class="lead" id="book-subtext">Send a request and I will get back to you.</p>
+      <div class="book-actions" id="book-actions"></div>
+      <div class="contact-card" id="contact">
+        <h3>Contact</h3>
+        <p><a class="js-phone-link" href="#contact">Phone</a></p>
+        <p><a class="js-email-link" href="#contact">Email</a></p>
+        <p class="muted" id="contact-hours"></p>
+        <p class="muted" id="contact-address"></p>
+      </div>
+    </div>
+    <div class="form-wrap" id="form-wrap"></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div id="footer-details"></div>
+    <div id="footer-hours"></div>
+    <div id="footer-year"></div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
