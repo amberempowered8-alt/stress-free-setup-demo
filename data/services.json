@@ -1,0 +1,64 @@
+{
+  "records": [
+    {
+      "id": "recSAMPLE1",
+      "fields": {
+        "Service Name": "Classic Manicure",
+        "Description": "Shape, cuticle care and polish.",
+        "Price": "$30",
+        "Duration": "45 min",
+        "Status": "Published"
+      }
+    },
+    {
+      "id": "recSAMPLE2",
+      "fields": {
+        "Service Name": "Gel Manicure",
+        "Description": "Long-wear gel color with a glossy finish.",
+        "Price": "$45",
+        "Duration": "60 min",
+        "Status": "Published"
+      }
+    },
+    {
+      "id": "recSAMPLE3",
+      "fields": {
+        "Service Name": "Full Set Extensions",
+        "Description": "Sculpted length with your choice of shape and color.",
+        "Price": "$75",
+        "Duration": "90 min",
+        "Status": "Published"
+      }
+    },
+    {
+      "id": "recSAMPLE4",
+      "fields": {
+        "Service Name": "Nail Art",
+        "Description": "Add custom art to any set. Price depends on the design.",
+        "Price": "From $15",
+        "Duration": "30 min",
+        "Status": "Published"
+      }
+    },
+    {
+      "id": "recSAMPLE5",
+      "fields": {
+        "Service Name": "Fill and Refresh",
+        "Description": "Keep your set looking fresh between full sets.",
+        "Price": "$55",
+        "Duration": "75 min",
+        "Status": "Published"
+      }
+    },
+    {
+      "id": "recSAMPLE6",
+      "fields": {
+        "Service Name": "Soak-off and Removal",
+        "Description": "Safe removal so your natural nails stay healthy.",
+        "Price": "$15",
+        "Duration": "20 min",
+        "Status": "Published"
+      }
+    }
+  ]
+}

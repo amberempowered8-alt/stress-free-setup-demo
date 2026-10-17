@@ -1,0 +1,7 @@
+{
+  "records": [
+    {"id": "recSAMPLE1", "fields": {"Quote": "Easy to book, on time, and I love the result. Sample review text.", "Customer Name": "Sample Client A.", "Neighborhood": "Sample City", "Status": "Published"}},
+    {"id": "recSAMPLE2", "fields": {"Quote": "Friendly and professional every single visit. Sample review text.", "Customer Name": "Sample Client B.", "Neighborhood": "Nearby Town", "Status": "Published"}},
+    {"id": "recSAMPLE3", "fields": {"Quote": "I tell everyone about this place. Sample review text.", "Customer Name": "Sample Client C.", "Neighborhood": "Another Town", "Status": "Published"}}
+  ]
+}
