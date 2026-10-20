@@ -226,8 +226,12 @@ function renderBooking() {
             ? formUrl
             : `https://airtable.com/embed${parsed.pathname}`;
         wrap.innerHTML =
-            `<iframe class="airtable-embed" title="Booking request form" src="${escapeHTML(embed)}" loading="lazy"></iframe>` +
-            `<p class="muted small">Form not loading? <a href="${escapeHTML(formUrl)}" target="_blank" rel="noopener noreferrer">Open it in a new tab</a>.</p>`;
+            `<p class="muted small form-loading">Loading your booking form. This takes a few seconds.</p>` +
+            `<iframe class="airtable-embed" title="Booking request form" src="${escapeHTML(embed)}" loading="eager"></iframe>` +
+            `<p class="muted small">Form slow or not loading? <a href="${escapeHTML(formUrl)}" target="_blank" rel="noopener noreferrer">Open it in a new tab</a>.</p>`;
+        const frame = wrap.querySelector('iframe');
+        const note = wrap.querySelector('.form-loading');
+        if (frame && note) frame.addEventListener('load', () => note.remove());
     } else {
         setText('book-subtext', 'Call, text or email and I will get you on the calendar.');
         wrap.innerHTML =
