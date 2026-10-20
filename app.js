@@ -50,7 +50,7 @@ const CONFIG = {
     serviceAreaList: ["Your City", "Nearby Town", "Another Town"],
 
     bookHeadline: "Ready for a fresh set?",
-    bookSubtext: "This is a demo, so the booking form is turned off. In your own site, your booking form shows right here.",
+    bookSubtext: "Try it! This form is live. Send a sample request and watch it land in the back office.",
 
     // ---------- Booking and contact ----------
     // BOOKING FORM: In Airtable, open your Inquiries table, create a Form view,
@@ -58,7 +58,7 @@ const CONFIG = {
     //    https://airtable.com/shrXXXXXXXXXXXXXX
     // Paste it here. It is safe to show publicly and needs no secret key.
     // Leave blank to show a "call or email" message instead.
-    bookingFormUrl: "",
+    bookingFormUrl: "https://airtable.com/appe85f6F6FjqHoXB/shryFLcHEc0f9N9rR",
 
     // Optional: already use another booking site? Paste its link for a button.
     existingBookingLink: "",
